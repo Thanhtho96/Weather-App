@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/edit_text_search_place"
+            app:touchAnchorSide="bottom"
+            app:touchRegionId="@id/edit_text_search_place" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/text_view_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/edit_text_search_place"
+            app:layout_constraintEnd_toEndOf="@id/edit_text_search_place"
+            app:visibilityMode="ignore" />
+        <Constraint
+            android:id="@+id/edit_text_search_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:alpha="1.0"
+            android:textColorHint="@color/silver"
+            android:textSize="@dimen/text_size_large"
+            android:translationX="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/button_search"
+            android:layout_width="@dimen/icon_weather_size_large"
+            android:layout_height="@dimen/icon_weather_size_large"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:alpha="0.0"
+            android:translationX="-200dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/button_setting"
+            app:layout_constraintEnd_toStartOf="@id/button_setting"
+            app:layout_constraintTop_toTopOf="@id/button_setting" />
+        <Constraint
+            android:id="@+id/button_setting"
+            android:layout_width="@dimen/icon_weather_size_large"
+            android:layout_height="@dimen/icon_weather_size_large"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:rotation="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/text_view_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:visibilityMode="ignore" />
+        <Constraint
+            android:id="@+id/edit_text_search_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:alpha="0.0"
+            android:translationX="200dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/button_setting"
+            app:layout_constraintEnd_toStartOf="@id/button_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/button_setting" />
+        <Constraint
+            android:id="@+id/button_search"
+            android:layout_width="@dimen/icon_weather_size_large"
+            android:layout_height="@dimen/icon_weather_size_large"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:alpha="1.0"
+            android:translationX="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/button_setting"
+            app:layout_constraintEnd_toStartOf="@id/button_setting"
+            app:layout_constraintTop_toTopOf="@id/button_setting" />
+        <Constraint
+            android:id="@+id/button_setting"
+            android:layout_width="@dimen/icon_weather_size_large"
+            android:layout_height="@dimen/icon_weather_size_large"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:rotation="180.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </ConstraintSet>
+</MotionScene>

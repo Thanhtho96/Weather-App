@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thời tiết</string>
+    <string name="txt_weather_app_description">Ứng dụng thời tiết của Thành Thỏ</string>
+    <string name="txt_home">Trang chính</string>
+    <string name="txt_settings">Cài đặt</string>
+    <string name="need_location_permission">Ứng dụng cần quyền vị trí để hoạt động</string>
+    <string name="grant_permission">Cho phép quyền</string>
+    <string name="location_permission_is_deny">Quyền truy cập Vị trí bị từ chối, làm ơn mở Cài đặt Ứng dụng để cấp quyền</string>
+    <string name="txt_wind_speed_imperial_per_hour">%1$s dặm/h</string>
+    <string name="txt_description_meter">%1$s. Cao %2$s\°C. Gió %3$s tốc độ %4$s m/s</string>
+    <string name="txt_description_imperial">%1$s. Cao %2$s\°F. Gió %3$s tốc độ %4$s dặm/h</string>
+    <string name="txt_celsius_temp_and_feel_like">%1$s\°C - Cảm Thấy: %2$s\°C</string>
+    <string name="txt_fahrenheit_temp_and_feel_like">%1$s\°F - Cảm Thấy: %2$s\°F</string>
+    <string name="txt_wind_meter_per_sec_compass_direction">Gió: %1$s m/s - %2$s</string>
+    <string name="txt_wind_imperial_per_hour_compass_direction">Gió: %1$s dặm/h - %2$s</string>
+    <string name="txt_metric_day_description">Ngày - Mặt trời mọc lúc %1$s. Cao %2$s\°C. Cảm Thấy: %3$s\°C</string>
+    <string name="txt_imperial_day_description">Ngày - Mặt trời mọc lúc %1$s. Cao %2$s\°F. Cảm Thấy: %3$s\°F</string>
+    <string name="txt_metric_night_description">Đêm - Mặt trời lặn lúc %1$s. Thấp %2$s\°C. Cảm Thấy: %3$s\°C</string>
+    <string name="txt_imperial_night_description">Đếm - Mặt trời lặn lúc %1$s. Thấp %2$s\°F. Cảm Thấy: %3$s\°F</string>
+    <string name="txt_uvi_description">Chỉ số UV: %1$s</string>
+    <string name="txt_rain_volume">Mưa: %1$s mm</string>
+    <string name="txt_snow_volume">Tuyết: %1$s mm</string>
+    <string name="txt_low">Thấp</string>
+    <string name="txt_medium">Trung bình</string>
+    <string name="txt_High">Cao</string>
+    <string name="txt_feel_like">Cảm Thấy</string>
+    <string name="txt_pressure">Áp Suất</string>
+    <string name="txt_humidity">Độ Ẩm</string>
+    <string name="txt_dew_point">Điểm Sương</string>
+    <string name="txt_uv_index">Chỉ Số UV</string>
+    <string name="txt_visibility">Tầm nhìn</string>
+    <string name="txt_hourly">Hàng giờ</string>
+    <string name="txt_daily">Hàng ngày</string>
+    <string name="txt_temperature">Nhiệt độ</string>
+    <string name="txt_celsius">Độ C</string>
+    <string name="txt_fahrenheit">Độ F</string>
+    <string name="txt_unit">Đơn vị</string>
+    <string name="txt_metric">Hệ mét</string>
+    <string name="txt_imperial">Hệ đo lường Anh</string>
+    <string name="txt_next_hours">Những giờ tiếp theo</string>
+    <string name="txt_today">Hôm nay</string>
+    <string name="txt_tomorrow">Ngày mai</string>
+    <string name="txt_next_days">Những ngày tiếp theo</string>
+    <string name="txt_search_place">Tìm địa điểm</string>
+    <string name="txt_current_weather">Thời tiết hiện tại</string>
+
+    <string-array name="compass_directions">
+        <item>Bắc</item>
+        <item>Bắc - Bắc Đông</item>
+        <item>Bắc Đông</item>
+        <item>Đông - Bắc Đông</item>
+        <item>Đông</item>
+        <item>Đông - Nam Đông</item>
+        <item>Nam Đông</item>
+        <item>Nam - Nam Đông</item>
+        <item>Nam</item>
+        <item>Nam - Nam Tây</item>
+        <item>Nam Tây</item>
+        <item>Tây - Nam Tây</item>
+        <item>Tây</item>
+        <item>Tây - Bắc Tây</item>
+        <item>Bắc Tây</item>
+        <item>Bắc - Bắc Tây</item>
+        <item>Bắc</item>
+    </string-array>
+    <string name="txt_history">Lịch sử</string>
+    <string name="txt_your_search_history">Lịch sử tìm kiếm địa điểm của bạn</string>
+    <string name="txt_language">Ngôn ngữ</string>
+    <string name="txt_my_location">Vị trí của tôi</string>
+    <string name="txt_do_you_want_to_exit_application">Bạn muốn thoát?</string>
+    <string name="txt_yes">Đúng</string>
+    <string name="txt_no">Không</string>
+    <string name="txt_choose_language">Chọn Ngôn Ngữ khác</string>
+    <string name="txt_cancel">Hủy</string>
+    <string name="txt_gps_network_not_enabled">Dịch vụ Vị trí chưa được bật, xin vui lòng bật nó</string>
+    <string name="txt_open_location_settings">Mở Cài đặt Vị trí</string>
+    <string name="enable_it">Bật nó</string>
+    <string name="need_location_setting">Ứng dụng cần Dịch vụ Vị trí được bật để hoạt động</string>
+    <string name="gps_provider_not_available">Nhà cung cấp GPS không có sẵn</string>
+    <string name="network_provider_not_available">Nhà cung cấp Mạng không có sẵn</string>
+    <string name="open_wireless_settings">Mở Cài đặt Mạng không dây</string>
+    <string name="txt_open_app_settings">Mở Cài đặt của Ứng dụng</string>
+    <string name="please_rating">Làm ơn hãy bỏ ra một chút thời gian để đánh ứng dụng của chúng tôi trên CH Play</string>
+    <string name="txt_thank_you_message">Cảm ơn vì đã đánh giá chúng tôi</string>
+    <string name="please_choose_an_email_app">Làm ơn hãy chọn một ứng dụng Email</string>
+    <string name="text_email_review_subject">Đánh giá của tôi với ứng dụng %1$s</string>
+    <plurals name="text_please_write_review">
+        <item quantity="other">** Làm ơn hãy viết và gửi đánh giá của bạn về chúng tôi, chúng tôi sẽ phản hồi nhanh nhất có thể **\nTôi đánh giá %d sao bởi vì …</item>
+    </plurals>
+    <string name="txt_weather_info_notification_description">Đảy thông báo về thời tiết ở thời gian hiện tại</string>
+    <string name="weather_info_channel_name">Thông báo về thông tin thời tiết</string>
+</resources>

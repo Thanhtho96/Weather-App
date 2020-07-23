@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hourly_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/temp_hourly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="38*C" />
+
+    <ImageView
+        android:id="@+id/icon_weather_hourly"
+        android:layout_width="@dimen/icon_weather_size_large"
+        android:layout_height="@dimen/icon_weather_size_large"
+        android:layout_marginTop="@dimen/_27sdp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@id/timestamp_hourly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temp_hourly"
+        tools:src="@drawable/ic_test" />
+
+    <TextView
+        android:id="@+id/timestamp_hourly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_weather_hourly"
+        tools:text="14:00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

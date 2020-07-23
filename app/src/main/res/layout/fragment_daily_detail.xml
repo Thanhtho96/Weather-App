@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.HistoryFragment">
+
+    <TextView
+        android:id="@+id/textNextDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="@dimen/_7sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/txt_next_days"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_huge" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_days"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        tools:itemCount="21"
+        tools:listitem="@layout/item_daily_detail" />
+
+</LinearLayout>

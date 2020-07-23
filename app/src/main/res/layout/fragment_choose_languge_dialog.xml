@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_mode"
+    android:padding="@dimen/_7sdp"
+    tools:context=".ui.ChooseLanguageDialogFragment">
+
+    <TextView
+        android:id="@+id/textViewLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_between_text_view_5dp"
+        android:text="@string/txt_choose_language"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_huge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLanguage">
+
+        <RadioButton
+            android:id="@+id/radioButtonEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/txt_english"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVietnamese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/txt_vietnamese"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:backgroundTint="@color/red"
+        android:text="@string/txt_cancel"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupLanguage" />
+
+    <Button
+        android:id="@+id/button_ok"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:backgroundTint="@color/green"
+        android:text="@string/txt_ok"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_cancel"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupLanguage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

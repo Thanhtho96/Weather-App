@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_7sdp"
+    android:paddingVertical="@dimen/_2sdp">
+
+    <TextView
+        android:id="@+id/text_day_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Today" />
+
+    <ImageView
+        android:id="@+id/weather_icon_header"
+        android:layout_width="@dimen/icon_weather_size_huge"
+        android:layout_height="@dimen/icon_weather_size_huge"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_day_header"
+        tools:src="@drawable/ic_test" />
+
+    <TextView
+        android:id="@+id/text_hour_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_day_header"
+        tools:text="21:00" />
+
+    <TextView
+        android:id="@+id/text_temperature_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_hour_header"
+        tools:text="31*C - Feel Like: 33*C" />
+
+    <TextView
+        android:id="@+id/text_description_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_temperature_header"
+        tools:text="Thunderstorm" />
+
+    <TextView
+        android:id="@+id/text_wind_description_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/space_between_text_view_5dp"
+        android:textColor="@color/silver"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_description_header"
+        tools:text="Wind: 13 km/h - Southeast" />
+
+    <TextView
+        android:id="@+id/text_uv_index_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/silver"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_wind_description_header"
+        tools:text="UV index: Low" />
+
+    <TextView
+        android:id="@+id/text_rain_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/silver"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_uv_index_header"
+        tools:text="Rain: 1.02 mm" />
+
+    <TextView
+        android:id="@+id/text_snow_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:textColor="@color/silver"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_header"
+        app:layout_constraintTop_toBottomOf="@id/text_rain_header"
+        tools:text="Snow: 0.02 mm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

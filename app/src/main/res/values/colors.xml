@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="sun_color">#FFD65B</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="silver">#8C8C8C</color>
+    <color name="opaque_silver">#81DDDDDD</color>
+    <color name="normal_temp">#F35625</color>
+    <color name="low_temp">#FFC32B</color>
+    <color name="high_temp">#FF3300</color>
+    <color name="green">#36F449</color>
+    <color name="red">#fc3d3d</color>
+    <color name="text_white_bg">#a2a2a2</color>
+    <color name="dark_mode">#303030</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">@dimen/_11ssp</dimen>
+    <dimen name="text_size_normal">@dimen/_13ssp</dimen>
+    <dimen name="text_size_large">@dimen/_15ssp</dimen>
+    <dimen name="text_size_huge">@dimen/_18ssp</dimen>
+    <dimen name="text_size_extra_huge">@dimen/_23ssp</dimen>
+    <dimen name="text_size_extra_extra_huge">@dimen/_27ssp</dimen>
+    <dimen name="space_between_text_view_5dp">@dimen/_5sdp</dimen>
+    <dimen name="icon_weather_size_normal">@dimen/_20sdp</dimen>
+    <dimen name="icon_weather_size_large">@dimen/_27sdp</dimen>
+    <dimen name="icon_weather_size_huge">@dimen/_34sdp</dimen>
+</resources>

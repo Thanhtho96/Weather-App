@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BottomSettingFragment">
+
+    <TextView
+        android:id="@+id/textSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/txt_settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_huge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:src="@drawable/ic_arrow_back_white"
+        app:layout_constraintBottom_toBottomOf="@id/textSetting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textSetting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSetting">
+
+        <TextView
+            android:id="@+id/text_view_my_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_my_location_white"
+            android:drawablePadding="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/txt_my_location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_huge" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/opaque_silver" />
+
+        <TextView
+            android:id="@+id/textViewUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="@string/txt_unit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_huge" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/outline_text_box"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMetric"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_start_states"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/_27sdp"
+                android:text="@string/txt_metric"
+                android:textColor="@drawable/radio_text"
+                android:textSize="@dimen/text_size_large"
+                app:buttonTint="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/radioButtonImperial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_end_states"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/_27sdp"
+                android:text="@string/txt_imperial"
+                android:textColor="@drawable/radio_text"
+                android:textSize="@dimen/text_size_large"
+                app:buttonTint="@android:color/transparent" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/opaque_silver" />
+
+        <TextView
+            android:id="@+id/button_choose_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/txt_choose_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_huge" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/opaque_silver" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
